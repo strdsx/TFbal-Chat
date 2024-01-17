@@ -1,5 +1,4 @@
 import os
-os.environ['OPENAI_API_KEY'] = ""
 import streamlit as st
 from time import sleep
 
