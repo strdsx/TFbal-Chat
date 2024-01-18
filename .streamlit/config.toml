@@ -2,7 +2,7 @@
 runOnSave = true
 
 [client]
-toolbarMode = "viewer"
+toolbarMode = "auto"
 # displayEnabled = false
 showErrorDetails = false
 
