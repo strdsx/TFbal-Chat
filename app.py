@@ -15,7 +15,7 @@ st.set_page_config(page_title="TF 고민상담", page_icon="🤔", layout="wide"
 
 hide_css = """
 <style>
-#GithubIcon {visibility: hidden;}
+#MainMenu {visibility: hidden;}
 </style>
 """
 st.markdown(hide_css, unsafe_allow_html=True)
