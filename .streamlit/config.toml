@@ -2,7 +2,9 @@
 runOnSave = true
 
 [client]
-toolbarMode = "minimal"
+toolbarMode = "viewer"
+# displayEnabled = false
+showErrorDetails = false
 
 [theme]
 base="dark"
