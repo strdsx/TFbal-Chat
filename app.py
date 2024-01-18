@@ -13,13 +13,6 @@ import templates
 
 st.set_page_config(page_title="TF 고민상담", page_icon="🤔", layout="wide")
 
-hide_css = """
-<style>
-#MainMenu {visibility: hidden;}
-</style>
-"""
-st.markdown(hide_css, unsafe_allow_html=True)
-
 @st.cache_data
 def avatar_load(t_path="./images/t_avatar.png", f_path="./images/f_avatar.png"):
     return (Image.open(t_path).resize((256,256)),
