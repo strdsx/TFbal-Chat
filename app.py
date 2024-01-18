@@ -13,6 +13,13 @@ import templates
 
 st.set_page_config(page_title="TF 고민상담", page_icon="🤔", layout="wide")
 
+hide_css = """
+<style>
+#GithubIcon {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_css, unsafe_allow_html=True)
+
 @st.cache_data
 def avatar_load(t_path="./images/t_avatar.png", f_path="./images/f_avatar.png"):
     return (Image.open(t_path).resize((256,256)),
@@ -39,7 +46,7 @@ with st.sidebar:
     # memory = st.number_input(label='**Memory**', min_value=0, max_value=10, value=5, key='memory')
 
 t_avatar, f_avatar = avatar_load()
-st.markdown("### 🤔 TF 고민 상담 🤔")
+st.title("🤔 TF 고민 상담 🤔")
 with st.expander(label="**설명** 👇", expanded=False):
     tava, fava = st.columns(2)
     tava.image(t_avatar.resize((128,128)), caption='T-bal')
